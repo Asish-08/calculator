@@ -17,7 +17,7 @@ def perform():
         print("bye")
         run=False
     else:
-        equation=re.sub('[a-zA-Z]','',equation)
+        equation=re.sub('[a-zA-Z$_@:;<>?]','',equation)
         if prev==0:
           prev= eval(equation)
         else:
